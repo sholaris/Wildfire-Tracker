@@ -18,7 +18,7 @@ const Map = ({fireEventsData, center, zoom}) => {
     return (
         <div className="map">
             <GoogleMapReact
-                bootstrapURLKeys={{key: 'AIzaSyAYbt_L11QqB0sPKpvR3y2VX2daPKoTir8'}}
+                bootstrapURLKeys={{key: 'YOUR_GOOGLE_MAPS_API_KEY'}}
                 defaultCenter={center}
                 defaultZoom={zoom}
             >
