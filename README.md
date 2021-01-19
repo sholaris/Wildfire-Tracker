@@ -6,10 +6,10 @@
 
 https://eonet.sci.gsfc.nasa.gov/docs/v2.1
 
-## Usage
+## Installation
 
-```
-# Install dependencies
+```bash
+# Install required dependencies
 npm install
 
 # Starting app
@@ -18,6 +18,26 @@ npm start
 # Build
 npm run build
 ```
-## API Keys
+## Configuration
 
 Add your own Google Maps API key in the Map component.
+
+> src/components/Map.js
+
+```javascript
+const Map = ({fireEventsData, center, zoom}) => {
+
+   ... 
+       
+  <GoogleMapReact
+    bootstrapURLKeys={{key: 'YOUR_GOOGLE_MAPS_API_KEY'}}
+    defaultCenter={center}
+    defaultZoom={zoom}
+   >
+      {markers}
+   </GoogleMapReact>
+   
+   ... 
+}
+
+```
